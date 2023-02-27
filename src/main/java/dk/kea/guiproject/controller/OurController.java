@@ -1,4 +1,4 @@
-package dk.kea.guiproject;
+package dk.kea.guiproject.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,9 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class OurController
 {
-    @GetMapping
+    @GetMapping("/forside")
     public String ourFood()
     {
         return "madspild";
+    }
+
+    @GetMapping("/info")
+    public String ourInfo()
+    {
+        return "info";
     }
 }
