@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{../static/css/frontpage.css}" href="../static/css/frontpage.css">
+    <link rel="stylesheet" th:href="@{../static/css/info.css}" href="../static/css/info.css">
     <title>Info</title>
 </head>
 <body>
 
+<div class="navbar">
+    <div id="logo">
+        <a href="madspild.html">
+            <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
+        </a>
+    </div>
+
+    <ul>
+        <li><a href="info.html"><b><u>Info</u></b></a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="stats.html">Statistik</a></li>
+    </ul>
+    <div id="search">
+        <input type="text" placeholder="Søg..">
+        <input class="buttonedit" type="button" value="Søg">
+    </div>
+</div>
+
+
+
+<div class="infopage">
+
+    <div class="information">
+
+        <h1>Information om madspild</h1>
+        Madspildet i den danske servicesektor udgør 227.000-ton pr. år. <br>
+        Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år. <br> <br>
+        Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år,<br>
+        svarende til 72 % af servicesektorens madspild. <br> <br>
+        Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år,<br>
+        mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.
+
+    </div>
+
+    <div class="infoimg">
+        <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores forsidebillede" style="width:500px;height:auto;">
+    </div>
+</div>
+
 </body>
+<footer>
+    <div class="address">
+        <address>
+            Guldbergsgade 1000000N<br>
+            København N<br>
+            Danmark
+        </address>
+    </div>
+</footer>
 </html>

@@ -1,0 +1,27 @@
+.navbar
+{
+}
+
+.infopage
+{
+    display: flex;
+}
+
+.information
+{
+    width:60%;
+    font-size: 150%;
+    padding: 5% 0 5% 5%;
+}
+
+.infoimg
+{
+    width: 30%;
+    padding: 10% 8.5% 5% 0%;
+    margin-left: 5%;
+}
+
+h1
+{
+    font-size: 130%;
+}
