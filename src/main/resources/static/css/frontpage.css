@@ -12,7 +12,23 @@ body
     top: 0;
     font-size: 130%;
     z-index: 1; /*Gør at navbaren er forrest*/
+    margin: -1% 0% 0% 0%;
+
 }
+
+#logo
+{
+    margin-right: 25%;
+    /*padding-left: 10%;*/
+}
+
+#search
+{
+    margin-left: 25%;
+    /*padding-left: 10%;*/
+}
+
+
 
 ul
 {
