@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<div class="navbar">
+    <div id="logo">
+        <a th:href="@{forside}" href="madspild.html">
+            <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
+        </a>
+    </div>
 
+    <ul>
+        <li><a th:href="@{info}" href="info.html">Info</a></li>
+        <li class="chosenbutton"><a th:href="@{tips}" href="tips.html"><span style = "color: black"><b><u>Tips</u></b></span></a></li>
+        <li><a th:href="@{stats}" href="stats.html">Statistik</a></li>
+    </ul>
+
+    <div id="search">
+        <input type="text" placeholder="Søg..">
+        <input class="buttonedit" type="button" value="Søg">
+    </div>
+</div>
+<div class="tips-titel"><h1>Tips til reducering af madspild</h1></div>
+<br>
+<span style="font-style:italic;">Kilde: <a th:href="@{https://altomkost.dk/fakta/madspild/}" href="https://altomkost.dk/fakta/madspild/"> Madspild, altomkost.dk </a></span>
+<div class="box-outer">
+
+    <div id="tips-column1">
+        <div class="box-article" id="box1">
+            <div class="box-img">
+                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+
+            </div>
+            <div class="box-txt">
+                <b>Datomærkning</b><br><br>
+                    - ”Sidste anvendelsesdato” betyder, at du kan blive alvorligt syg af at spise fødevaren, hvis datoen er overskredet.<br><br>
+                    - ”Bedst før” er til gengæld kun en vejledende datomærkning, og hvis varen dufter og smager fint, kan du sagtens spise den.
+            </div>
+        </div>
+
+        <div class="box-article" id="box3">
+            <div class="box-img">
+                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+            </div>
+            <div class="box-txt">
+
+            </div>
+        </div>
+
+    </div>
+    <div id="tips-column2">
+        <div class="box-article" id="box2">
+            <div class="box-img">
+                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+            </div>
+            <div class="box-txt">
+                <b>Læg en plan og undgå madspild</b><br><br>
+                Du kan mindske dit madspild, hvis du bruger lidt ekstra tid på at planlægge dine indkøb og madlavning.<br><br>
+
+                Planlægning med indkøbsseddel har mange fordele. Hvis det foregår hjemme hos dig selv, kan du tjekke,
+                hvad du allerede har i køleskab, fryser og skuffer. Samtidig kan hele familien i ro og mag blive involveret og bidrage med idéer og ønsker.<br><br>
+
+                Når du kommer til butikken med en indkøbsseddel, har du haft mulighed for at gennemtænke indkøb og behov, inden du køber ind.
+                På den måde er der større sandsynlighed for, at du kan undgå impulskøb.<br><br>
+            </div>
+        </div>
+
+        <div class="box-article" id="box4">
+            <div class="box-img">
+                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+            </div>
+            <div class="box-txt">
+
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>

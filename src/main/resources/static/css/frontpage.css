@@ -1,6 +1,6 @@
 body
 {
-    font-family: "Calibri Light";
+    font-family: "Calibri";
     background-color:#c7ebd1;
     min-height:100vh;
     overflow-x: hidden;
@@ -10,7 +10,7 @@ body
 {
     display: flex;
     justify-content: center;
-    background-color: tomato;
+    background-color: #185926;
     position: sticky;
     width: 101vw;
     top: 0;
@@ -81,9 +81,9 @@ footer
 {
     display: flex;
     width: 100vw;
-    background-color: tomato;
+    background-color: #185926;
     padding: 15px 15px 15px 45px;
-    margin: 0% 0% 0% -1%;
+    margin: 0% 0% -1% -1%;
     bottom: 0;
 }
 
@@ -91,4 +91,15 @@ footer
  {
     background-color:goldenrod;
     border: 1px solid darkgoldenrod;
+}
+.chosenbutton
+{
+    background-color: #c7ebd1;
+    padding-bottom: 2px;
+    color: black;
+}
+
+.address
+{
+    color:white;
 }

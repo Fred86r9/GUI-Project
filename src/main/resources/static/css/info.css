@@ -29,10 +29,6 @@ h1
 footer
 {
     position: fixed;
+    margin: 0 0 0 -1%;
 }
 
-#infobutton
-{
-    background-color: #c7ebd1;
-    padding-bottom: 2px;
-}

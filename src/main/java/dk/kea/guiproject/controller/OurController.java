@@ -17,4 +17,10 @@ public class OurController
     {
         return "info";
     }
+
+    @GetMapping("/tips")
+    public String ourTips()
+    {
+        return "tips";
+    }
 }
