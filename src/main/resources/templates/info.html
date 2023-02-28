@@ -2,21 +2,22 @@
 <html lang="en" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{../static/css/frontpage.css}" href="../static/css/frontpage.css">
-    <link rel="stylesheet" th:href="@{../static/css/info.css}" href="../static/css/info.css">
+    <link rel="stylesheet" th:href="@{../css/frontpage.css}" href="../static/css/frontpage.css">
+    <link rel="stylesheet" th:href="@{../css/info.css}" href="../static/css/info.css">
+    <link rel="icon" type="image/png" th:href="@{../css/img.png}" href="../static/images/img.png"/>
     <title>Info</title>
 </head>
 <body>
 
 <div class="navbar">
     <div id="logo">
-        <a href="madspild.html">
+        <a th:href="@{forside}" href="madspild.html">
             <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
         </a>
     </div>
 
     <ul>
-        <li><a href="info.html"><b><u>Info</u></b></a></li>
+        <li id="infobutton"><a th:href="@{info}" href="info.html"><b><u>Info</u></b></a></li>
         <li><a href="tips.html">Tips</a></li>
         <li><a href="stats.html">Statistik</a></li>
     </ul>

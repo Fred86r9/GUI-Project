@@ -12,6 +12,7 @@ body
     justify-content: center;
     background-color: tomato;
     position: sticky;
+    width: 101vw;
     top: 0;
     font-size: 130%;
     z-index: 1; /*Gør at navbaren er forrest*/
@@ -55,7 +56,9 @@ li a:hover
 {
     background-color: #c7ebd1;
     color: black;
-    height: 100%;
+    text-decoration: underline;
+    margin: 0 0 -5% 0;
+    padding-bottom: 10px;
 }
 
 .frontpic
@@ -76,9 +79,12 @@ li a:hover
 
 footer
 {
+    display: flex;
+    width: 100vw;
     background-color: tomato;
     padding: 15px 15px 15px 45px;
-    margin: 0% 0% -1% 0%;
+    margin: 0% 0% 0% -1%;
+    bottom: 0;
 }
 
 .buttonedit

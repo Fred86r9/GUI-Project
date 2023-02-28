@@ -25,3 +25,14 @@ h1
 {
     font-size: 130%;
 }
+
+footer
+{
+    position: fixed;
+}
+
+#infobutton
+{
+    background-color: #c7ebd1;
+    padding-bottom: 2px;
+}
