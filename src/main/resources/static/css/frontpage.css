@@ -3,6 +3,7 @@ body
     font-family: "Calibri Light";
     background-color:#c7ebd1;
     min-height:100vh;
+    overflow-x: hidden;
 }
 
 .navbar
@@ -14,7 +15,7 @@ body
     top: 0;
     font-size: 130%;
     z-index: 1; /*Gør at navbaren er forrest*/
-    margin: -1% 0% 0% 0%;
+    margin: -1% -2% 0% -1%;
 }
 
 #logo
