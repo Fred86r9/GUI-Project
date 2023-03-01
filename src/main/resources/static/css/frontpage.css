@@ -2,3 +2,8 @@ footer
 {
     position:fixed;
 }
+
+body
+{
+    overflow-y: hidden;
+}
