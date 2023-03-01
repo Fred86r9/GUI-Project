@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{../css/frontpage.css}" href="../static/css/frontpage.css">
-    <link rel="icon" type="image/png" th:href="@{../css/img.png}" href="../static/images/img.png"/>
+    <link rel="stylesheet" th:href="@{../css/template.css}" href="../static/css/template.css">
+    <link rel="icon" type="image/png" th:href="@{../css/logo.png}" href="../static/images/logo.png"/>
     <title>Danmark Mod Madspild</title>
 </head>
 <body>
@@ -11,24 +12,25 @@
 <div class="navbar">
     <div id="logo">
         <a th:href="@{forside}" href="madspild.html">
-            <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
+            <img th:src="@{/images/logo.png}" src="../static/images/logo.png" alt="Her er vores logo" style="width:100px; height: 37px;">
         </a>
     </div>
 
     <ul>
         <li><a th:href="@{info}" href="info.html">Info</a></li>
         <li><a th:href="@{tips}" href="tips.html">Tips</a></li>
-        <li><a th:href="@{stats}" href="stats.html">Statistik</a></li>
+        <li><a th:href="@{statistik}" href="statistik.html">Statistik</a></li>
     </ul>
 
     <div id="search">
         <input type="text" placeholder="Søg..">
-        <input class="buttonedit" type="button" value="Søg">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <button class="buttonedit">Søg</button>
+        </a>
     </div>
 </div>
 
 <div class="frontpic">
-    <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores forsidebillede" style="width:1000px;height:2000px;">
    <div class="textforpic">
     <h1>
         Danmark Mod Madspild

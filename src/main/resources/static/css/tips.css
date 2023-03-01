@@ -1,5 +1,6 @@
 .box-outer
 {
+    background-color:#c7ebd1;
     display: flex;
     width:70%;
     margin-left: 15%;
@@ -11,7 +12,7 @@
 }
 .box-article
 {
-    width: 90%;
+    width: 100%;
     border:2px solid teal;
     margin: 0 0 5% 0;
 }
@@ -45,9 +46,13 @@ footer
 }
 .tips-titel
 {
+    background-color:#c7ebd1;
     text-align:center;
     font-size: 150%;
-    margin: 5% 0 0 0;
+    margin: 0 233px 0 15%;
+    padding-top:10px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
 }
 
 #tips-column1

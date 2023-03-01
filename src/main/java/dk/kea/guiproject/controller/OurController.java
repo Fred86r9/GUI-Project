@@ -23,4 +23,10 @@ public class OurController
     {
         return "tips";
     }
+
+    @GetMapping("/statistik")
+    public String ourStats()
+    {
+        return "statistik";
+    }
 }

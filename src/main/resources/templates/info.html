@@ -2,9 +2,9 @@
 <html lang="en" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{../css/frontpage.css}" href="../static/css/frontpage.css">
+    <link rel="stylesheet" th:href="@{../css/template.css}" href="../static/css/template.css">
     <link rel="stylesheet" th:href="@{../css/info.css}" href="../static/css/info.css">
-    <link rel="icon" type="image/png" th:href="@{../css/img.png}" href="../static/images/img.png"/>
+    <link rel="icon" type="image/png" th:href="@{../css/logo.png}" href="../static/images/logo.png"/>
     <title>Info</title>
 </head>
 <body>
@@ -12,14 +12,14 @@
 <div class="navbar">
     <div id="logo">
         <a th:href="@{forside}" href="madspild.html">
-            <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
+            <img th:src="@{/images/logo.png}" src="../static/images/logo.png" alt="Her er vores logo" style="width:100px; height: 37px;">
         </a>
     </div>
 
     <ul>
         <li class="chosenbutton"><a th:href="@{info}" href="info.html"><span style = "color: black"><b><u>Info</u></b></span></a></li>
         <li><a th:href="@{tips}" href="tips.html">Tips</a></li>
-        <li><a th:href="@{stats}" href="stats.html">Statistik</a></li>
+        <li><a th:href="@{statistik}" href="statistik.html">Statistik</a></li>
     </ul>
     <div id="search">
         <input type="text" placeholder="Søg..">
@@ -44,7 +44,7 @@
     </div>
 
     <div class="infoimg">
-        <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores forsidebillede" style="width:500px;height:auto;">
+        <img th:src="@{/images/infomad.png}" src="../static/images/infomad.png" alt="Her er vores forsidebillede" style="width:500px;height:auto;">
     </div>
 </div>
 </body>

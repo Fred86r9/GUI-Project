@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Tips</title>
-    <link rel="stylesheet" th:href="@{../css/frontpage.css}" href="../static/css/frontpage.css">
+    <link rel="stylesheet" th:href="@{../css/template.css}" href="../static/css/template.css">
     <link rel="stylesheet" th:href="@{../css/tips.css}" href="../static/css/tips.css">
-    <link rel="icon" type="image/png" th:href="@{../css/img.png}" href="../static/images/img.png"/>
+    <link rel="icon" type="image/png" th:href="@{../css/logo.png}" href="../static/images/logo.png"/>
 </head>
 <body>
 <div class="navbar">
     <div id="logo">
         <a th:href="@{forside}" href="madspild.html">
-            <img th:src="@{/images/img_1.png}" src="../static/images/img_1.png" alt="Her er vores logo" style="width:auto; height: 100%;">
+            <img th:src="@{/images/logo.png}" src="../static/images/logo.png" alt="Her er vores logo" style="width:100px; height: 37px;">
         </a>
     </div>
 
     <ul>
         <li><a th:href="@{info}" href="info.html">Info</a></li>
         <li class="chosenbutton"><a th:href="@{tips}" href="tips.html"><span style = "color: black"><b><u>Tips</u></b></span></a></li>
-        <li><a th:href="@{stats}" href="stats.html">Statistik</a></li>
+        <li><a th:href="@{statistik}" href="statistik.html">Statistik</a></li>
     </ul>
 
     <div id="search">
@@ -26,15 +26,17 @@
         <input class="buttonedit" type="button" value="Søg">
     </div>
 </div>
-<div class="tips-titel"><h1>Tips til reducering af madspild</h1></div>
-<br>
-<span style="font-style:italic;">Kilde: <a th:href="@{https://altomkost.dk/fakta/madspild/}" href="https://altomkost.dk/fakta/madspild/"> Madspild, altomkost.dk </a></span>
+<div class="tips-titel"><h1>Tips til reducering af madspild</h1>
+    <br>
+    <span style="font-style:italic;">Kilde: <a th:href="@{https://altomkost.dk/fakta/madspild/}" href="https://altomkost.dk/fakta/madspild/" target="_blank"> Madspild, altomkost.dk </a></span>
+</div>
+
 <div class="box-outer">
 
     <div id="tips-column1">
         <div class="box-article" id="box1">
             <div class="box-img">
-                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+                <img th:src="@{/images/img.png}" src="../static/images/background.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
 
             </div>
             <div class="box-txt">
@@ -46,7 +48,7 @@
 
         <div class="box-article" id="box3">
             <div class="box-img">
-                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+                <img th:src="@{/images/img.png}" src="../static/images/background.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
             </div>
             <div class="box-txt">
 
@@ -57,7 +59,7 @@
     <div id="tips-column2">
         <div class="box-article" id="box2">
             <div class="box-img">
-                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+                <img th:src="@{/images/zerowaste.png}" src="../static/images/zerowaste.png" alt="Her er vores placeholderbillede" style="width:480px;height:auto;">
             </div>
             <div class="box-txt">
                 <b>Læg en plan og undgå madspild</b><br><br>
@@ -73,7 +75,7 @@
 
         <div class="box-article" id="box4">
             <div class="box-img">
-                <img th:src="@{/images/img.png}" src="../static/images/img.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
+                <img th:src="@{/images/img.png}" src="../static/images/background.png" alt="Her er vores placeholderbillede" style="width:100%;height:auto;">
             </div>
             <div class="box-txt">
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{../css/template.css}" href="../static/css/template.css">
+    <link rel="stylesheet" th:href="@{../css/tips.css}" href="../static/css/tips.css">
+    <link rel="stylesheet" th:href="@{../css/statistik.css}" href="../static/css/statistik.css">
+    <title>Statistik</title>
+
+</head>
+<body>
+<div class="navbar">
+    <div id="logo">
+        <a th:href="@{forside}" href="madspild.html">
+            <img th:src="@{/images/logo.png}" src="../static/images/logo.png" alt="Her er vores logo" style="width:100px; height: 37px;">
+        </a>
+    </div>
+
+    <ul>
+        <li><a th:href="@{info}" href="info.html">Info</a></li>
+        <li><a th:href="@{tips}" href="tips.html">Tips</a></li>
+        <li><a class="chosenbutton" th:href="@{statistik}" href="statistik.html"><b><u>Statistik</u></b></a></li>
+    </ul>
+
+    <div id="search">
+        <input type="text" placeholder="Søg..">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  >
+            <button class="buttonedit">Søg</button>
+        </a>
+    </div>
+</div>
+<div class="statpage">
+
+    <div class="statistik">
+        <h1>Statistik for madspild</h1>
+        Der blev i 2021 indsamlet 15.113 tons madaffald i København. Lige nu spilder vi hvert år 1555 millioner tons mad verden over (<a href="https://www.bcg.com/publications/2018/tackling-1.6-billion-ton-food-loss-and-waste-crisis" target="_blank">BCG, 2018</a>).
+        <br><br>
+        <b>Klimaeffekt</b><br>
+        I 2021 blev der sparet 2400 tons CO<sub>2</sub> pga. affaldssortetingen i København.
+
+        <br><br><br><br>
+        <span style="font-style:italic;">Kilde: <a th:href="@{https://toogoodtogo.dk/da/movement/knowledge/what-food-is-wasted}" href="https://toogoodtogo.dk/da/movement/knowledge/what-food-is-wasted" target="_blank"> Hvilken mad spildes?</a>, toogoodtogo.dk</span>
+    </div>
+</div>
+<div class="box-outer">
+
+    <div id="tips-column1">
+        <div class="box-article" id="box1">
+            <div class="box-img">
+                <img th:src="@{/images/statistik1.png}" src="../static/images/statistik1.png" alt="Her er vores statistik1 billede" style="width:363px;height:auto;">
+
+            </div>
+            <div class="box-txt">
+                <b>Total mængde madspild i verdenen pr. kategori</b><br><br>
+
+                  - Frugt og grønt: 644 millioner tons smides ud (42%) <br>
+                  - Korn: 347 millioner tons smides ud (22%) <br>
+                  - Rodfrugter og knolde: 275 millioner tons smides ud (18%) <br>
+                  - Mælkeprodukter: 143 millioner tons smides ud (9%) <br>
+                  - Kød: 74 millioner tons smides ud (5%) <br>
+                  - Oliefrø og bælgfrugter: 50 millioner tons smides ud (3%) <br>
+                  - Fisk og skaldyr: 22 milllioner tons smides ud (1%)
+            </div>
+        </div>
+
+
+
+    </div>
+    <div id="tips-column2">
+        <div class="box-article" id="box2">
+            <div class="box-img">
+                <img th:src="@{/images/affald.png}" src="../static/images/affald.png" alt="Billede af madaffald" style="width:400px;height:auto;">
+            </div>
+            <div class="box-txt">
+                <b>Genandvendelse af madaffald i København</b><br><br>
+                Af den indsamlede mængde madaffald genanvendes 97 procent.<br>
+                Det bruges bl.a. til produktion af biogas.
+            </div>
+        </div>
+
+        <div class="box-article" id="box4">
+            <div class="box-img">
+                <img th:src="@{/images/affald2.png}" src="../static/images/affald2.png" alt="Billede af madaffald" style="width:400px;height:auto;">
+            </div>
+            <div class="box-txt">
+                <b>Hvem er de største madspildere?</b><br>
+                Miljøstyrelsen estimerer årligt madspild i Danmark således:<br><br>
+                -Husholdninger: 36%<br>
+                -Detailhandlen: 23%<br>
+                -Fødevareindustrien: 19%<br>
+                -Primærproduktionen: 14%<br>
+                -Institutioner og storkøkkener: 4%<br>
+                -Hoteller og restauranter: 4%<br><br>
+
+                <span style="font-style:italic;">Kilde: <a th:href="@{https://bit.ly/3kDi3zs}" href="https://bit.ly/3kDi3zs" target="_blank"> Det store madspild sker hos forbrugeren</a>, mst.dk</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="address">
+        <address>
+            TomAto TomARto<br>
+            Guldbergsgade 1000000N<br>
+            København N<br>
+            Danmark
+        </address>
+    </div>
+</footer>
+</html>

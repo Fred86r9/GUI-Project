@@ -4,21 +4,21 @@
 
 .infopage
 {
+    background-color:#c7ebd1;
     display: flex;
+    margin: 0 233px -1% 233px;
 }
 
 .information
 {
     width:60%;
     font-size: 150%;
-    padding: 5% 0 5% 5%;
+    padding: 5% 0 5% 10px;
 }
 
 .infoimg
 {
-    width: 30%;
-    padding: 10% 8.5% 5% 0%;
-    margin-left: 5%;
+    padding: 12% 5% 5% 0%;
 }
 
 h1
